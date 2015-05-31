@@ -54,8 +54,7 @@ MIDDLEWARE_CLASSES = (
 
 AUTHENTICATION_BACKENDS = (
     'django_me.mongo_auth.backends.MongoEngineBackend',
-        #'mongoengine.django.auth.MongoEngineBackend',
-        )
+)
 
 AUTH_USER_MODEL = 'mongo_auth.MongoUser'
 # MONGOENGINE_USER_DOCUMENT = 'your_custom_user_document.models.Account'
