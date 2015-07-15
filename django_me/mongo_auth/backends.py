@@ -29,6 +29,7 @@ class MongoEngineBackend(object):
             self._user_doc = get_user_document()
         return self._user_doc
 
+
 def get_user(userid):
     """Returns a User object from an id (User.id). Django's equivalent takes
     request, but taking an id instead leaves it up to the developer to store

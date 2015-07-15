@@ -18,13 +18,13 @@ except ImportError:
 from django_me.utils import datetime_now #, make_password, check_password
 
 
-
 REDIRECT_FIELD_NAME = 'next'
 MONGOENGINE_USER_DOCUMENT = getattr(settings, 'MONGOENGINE_USER_DOCUMENT', 'django_me.mongo_auth.models.User')
 
 __all__ = (
     'get_user_document',
 )
+
 
 def get_user_document():
     """Get the user document class used for authentication.
@@ -37,6 +37,7 @@ def get_user_document():
     dot = name.rindex('.')
     module = import_module(name[:dot])
     return getattr(module, name[dot + 1:])
+
 
 class SiteProfileNotAvailable(Exception):
     pass
