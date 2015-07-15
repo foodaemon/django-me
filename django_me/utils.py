@@ -19,14 +19,14 @@ def get_hexdigest(algorithm, salt, raw_password):
     raise ValueError('Got unknown password algorithm type in password')
 
 
-def check_password(raw_password, password):
-    algo, salt, hash = password.split('$')
-    return hash == get_hexdigest(algo, salt, raw_password)
-
-
-def make_password(raw_password):
-    from random import random
-    algo = 'sha1'
-    salt = get_hexdigest(algo, str(random()), str(random()))[:5]
-    hash = get_hexdigest(algo, salt, raw_password)
-    return '%s$%s$%s' % (algo, salt, hash)
+# def check_password(raw_password, password):
+#     algo, salt, hash = password.split('$')
+#     return hash == get_hexdigest(algo, salt, raw_password)
+#
+#
+# def make_password(raw_password):
+#     from random import random
+#     algo = 'sha1'
+#     salt = get_hexdigest(algo, str(random()), str(random()))[:5]
+#     hash = get_hexdigest(algo, salt, raw_password)
+#     return '%s$%s$%s' % (algo, salt, hash)

@@ -2,6 +2,7 @@ from mongoengine import *
 
 from django.conf import settings
 from django.contrib import auth
+from django.contrib.auth.hashers import make_password, check_password
 from django.contrib.auth.models import _user_has_perm, _user_get_all_permissions, _user_has_module_perms
 from django.contrib.contenttypes.models import ContentTypeManager
 from django.core.exceptions import ImproperlyConfigured
@@ -14,7 +15,8 @@ except ImportError:
     """Handle older versions of Django"""
     from django.utils.importlib import import_module
 
-from django_me.utils import make_password, check_password, datetime_now
+from django_me.utils import datetime_now #, make_password, check_password
+
 
 
 REDIRECT_FIELD_NAME = 'next'
