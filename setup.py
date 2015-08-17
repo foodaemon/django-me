@@ -10,6 +10,7 @@ setup(name='djangome',
       author=djangome.__author__,
       url='https://github.com/nixdaemon/django-me',
       license=djangome.__license__,
+      include_package_data=True,
       platforms=['all'],
       classifiers=[
           'Intended Audience :: Developers',
