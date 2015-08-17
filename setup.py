@@ -4,7 +4,7 @@ import djangome
 
 
 setup(name='djangome',
-      packages = ['djangome', 'mongo_auth',],
+      packages = ['djangome',],
       version=djangome.__version__,
       description=djangome.__doc__,
       author=djangome.__author__,
