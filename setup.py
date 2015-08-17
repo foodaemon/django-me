@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import djangome
 
 
 setup(name='djangome',
-      packages = ['djangome',],
+      packages = find_packages(),
       version=djangome.__version__,
       description=djangome.__doc__,
       author=djangome.__author__,
