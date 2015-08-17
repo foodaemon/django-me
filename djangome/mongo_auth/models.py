@@ -15,7 +15,7 @@ except ImportError:
     """Handle older versions of Django"""
     from django.utils.importlib import import_module
 
-from django_me.utils import datetime_now #, make_password, check_password
+from djangome.utils import datetime_now #, make_password, check_password
 
 
 REDIRECT_FIELD_NAME = 'next'

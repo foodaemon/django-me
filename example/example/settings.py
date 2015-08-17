@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_me.mongo_auth',
+    'djangome.mongo_auth',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 AUTHENTICATION_BACKENDS = (
-    'django_me.mongo_auth.backends.MongoEngineBackend',
+    'djangome.mongo_auth.backends.MongoEngineBackend',
 )
 
 AUTH_USER_MODEL = 'mongo_auth.MongoUser'
