@@ -1,14 +1,15 @@
 from setuptools import setup
 
-import django_me
+import djangome
 
 
-setup(name='django-me',
-      version=django_me.__version__,
-      description=django_me.__doc__,
-      author=django_me.__author__,
+setup(name='djangome',
+      packages = ['djangome']
+      version=djangome.__version__,
+      description=djangome.__doc__,
+      author=djangome.__author__,
       url='https://github.com/nixdaemon/django-me',
-      license=django_me.__license__,
+      license=djangome.__license__,
       platforms=['all'],
       classifiers=[
           'Intended Audience :: Developers',
@@ -21,5 +22,5 @@ setup(name='django-me',
           'Programming Language :: Python :: Implementation :: PyPy',
           'Topic :: Django Mongoengine Integration',
       ],
-      py_modules=['django_me'],
+      keywords = ['django', 'mongoengine',],
       )
