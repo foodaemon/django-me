@@ -3,7 +3,7 @@ from setuptools import setup
 import django_me
 
 
-setup(name='django_me',
+setup(name='django-me',
       version=django_me.__version__,
       description=django_me.__doc__,
       author=django_me.__author__,
