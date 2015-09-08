@@ -30,7 +30,7 @@ def get_user_document():
     """Get the user document class used for authentication.
 
     This is the class defined in settings.MONGOENGINE_USER_DOCUMENT, which
-    defaults to `django_me.auth.User`.
+    defaults to `djangome.auth.User`.
 
     """
     name = MONGOENGINE_USER_DOCUMENT
