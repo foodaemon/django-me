@@ -19,7 +19,7 @@ from djangome.utils import datetime_now #, make_password, check_password
 
 
 REDIRECT_FIELD_NAME = 'next'
-MONGOENGINE_USER_DOCUMENT = getattr(settings, 'MONGOENGINE_USER_DOCUMENT', 'django_me.mongo_auth.models.User')
+MONGOENGINE_USER_DOCUMENT = getattr(settings, 'MONGOENGINE_USER_DOCUMENT', 'djangome.mongo_auth.models.User')
 
 __all__ = (
     'get_user_document',
